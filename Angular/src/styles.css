@@ -1,4 +1,10 @@
 *{
     margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Century Gothic;
+    color: #777777; font-size: 30px;
+    box-sizing:border-box;
+}
+
+body{
+    background: linear-gradient( #E5FCC2 ,  #E5FCC2   ,#45ADA8  , #547980    ,#594F4F )
 }

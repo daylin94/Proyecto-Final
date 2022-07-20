@@ -1,10 +1,11 @@
+
 <div class="topnav">
-    <a class="active" href="#home">Home</a>
-    <a href="#about">About</a>
+    <a class="active" href="#home">APOD</a>
+    <a href="" routerLink="info">Home</a>
     <div class="search-container">
         <form action="/action_page.php">
-          <input #searchInput type="search" placeholder="Search Video Game" name="search">
-          <button type="submit"><i class="fa fa-search"></i></button>
+          <input #searchInput type="search" placeholder="Search..." name="search">
+          <button type="submit" (click)="buscar(searchInput.value)"><i class="fa fa-search"></i></button>
         </form>
       </div>
   </div>

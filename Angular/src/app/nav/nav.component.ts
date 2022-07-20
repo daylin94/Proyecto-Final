@@ -1,25 +1,23 @@
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 import { debounceTime, distinctUntilChanged, fromEvent, map } from 'rxjs';
+import { ConectorService } from '../conector.service';
 
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.css']
 })
-export class NavComponent implements OnInit, AfterViewInit {
+export class NavComponent implements OnInit {
 
-  @ViewChild('searchInput')
-  inputSearch?: ElementRef
-  constructor() { }
-  ngAfterViewInit(){
-    fromEvent<any>(this.inputSearch?.nativeElement, 'keyup').pipe(
-      map(event => event.target.value), 
-      debounceTime(400),
-      distinctUntilChanged()
-    ).subscribe(text => console.log(text))
-  }
+  constructor(private router:Router,
+    private service:ConectorService) { }
+
 
   ngOnInit(): void {
+  }
+  buscar(searchInput:string){
+    this.router.navigate(["search",searchInput])
   }
 
 }

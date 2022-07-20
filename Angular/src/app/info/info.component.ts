@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConectorService } from '../conector.service';
 
 @Component({
   selector: 'app-info',
@@ -6,8 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./info.component.css']
 })
 export class InfoComponent implements OnInit {
-
-  constructor() { }
+ informacionRecibida:any = ""
+  constructor(private servicio:ConectorService) {
+    servicio.getInformacionGames().subscribe((data)=>{
+      this.informacionRecibida=data
+    })
+   }
 
   ngOnInit(): void {
   }

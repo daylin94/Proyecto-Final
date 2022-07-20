@@ -1,1 +1,9 @@
-<p>info works!</p>
+<div class="title">
+<!--<p *ngFor="let juego of informacionRecibida.results">{{juego}}}</p>-->
+</div>
+<div class="tar">  
+    
+        <app-tarjetas class="target" *ngFor="let juego of informacionRecibida.results"
+    [imagen]="juego.background_image" [nombre]="juego.name" [idJuego]="juego.id"></app-tarjetas>
+  
+</div>

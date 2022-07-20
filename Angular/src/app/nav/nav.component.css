@@ -1,25 +1,37 @@
 .topnav {
     overflow: hidden;
-    background-color: #2196F3;
+    background-color: #ffffff;
+    height: 80px;
+    border-bottom: #fbfbfb;
   }
   
   .topnav a {
+
     float: left;
     display: block;
-    color: white;
+    color: rgb(19, 19, 19);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 25px;
+    padding-top: 20px;
+  }
+
+  form{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
   }
   
   .topnav a:hover {
-    background-color: #91caf8;
+    background-color: #fbfbfb;
+    height: 100%;
     color: black;
   }
   
   .topnav a.active {
-    background-color: #ecf0f0;
+    background-color: #fbfbfb;
+    height: 100%;
     color: rgb(10, 10, 10);
   }
 
@@ -31,7 +43,9 @@
     padding: 6px;
     margin-top: 8px;
     font-size: 17px;
-    border: none;
+    border: none; 
+    outline: none;
+    background-color: whitesmoke;
   }
   
   .topnav .search-container button {
@@ -39,13 +53,22 @@
     padding: 6px 10px;
     margin-top: 8px;
     margin-right: 16px;
-    background: #ddd;
-    font-size: 17px;
+    background: white;
     border: none;
     cursor: pointer;
   }
   
   .topnav .search-container button:hover {
-    background: #ccc;
+    background: #ffffffed;
+  }
+
+  .topnav .search-container button{
+    background-color: whitesmoke;
+    float: left;
+    width: 20%;
+    padding: 10px;
+    color: rgb(10, 10, 10);
+  font-size: 17px;
+
   }
   

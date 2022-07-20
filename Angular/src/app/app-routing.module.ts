@@ -1,11 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DetallesComponent } from './detalles/detalles.component';
+import { InfoComponent } from './info/info.component';
 import { NavComponent } from './nav/nav.component';
-import { TarjetasComponent } from './tarjetas/tarjetas.component';
+import { SearchComponent } from './search/search.component';
 
 const routes: Routes = [
   {path:'nav', component:NavComponent},
-  {path:'tarjetas', component:TarjetasComponent},
+  {path:'info', component:InfoComponent},
+  {path:"details:id", component: DetallesComponent},
+  {path:"search/:id", component: SearchComponent },
+  {path:"",component:InfoComponent},
 
 ];
 
