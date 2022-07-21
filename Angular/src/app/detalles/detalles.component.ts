@@ -12,7 +12,7 @@ export class DetallesComponent implements OnInit {
 
   constructor(private ruta:ActivatedRoute,private servicio:ConectorService) { 
     this.ruta.params.subscribe((data:any)=>{
-      this.valorDelLink=data.value
+      this.valorDelLink=data.id
       this.servicio.getInformacionDetallada(this.valorDelLink).subscribe((info:any)=>{
         this.informacionRecibida=info
         console.log(this.informacionRecibida)

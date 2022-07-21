@@ -1,4 +1,6 @@
 
 <p>{{valordeLink}}</p>
-<app-tarjetas *ngFor="let juego of informacionApiBuscada.results"
-[imagen]="juego.background_image" [nombre]="juego.name"></app-tarjetas>
+<div class="tar">
+<app-tarjetas class="target" *ngFor="let juego of informacionApiBuscada.results"
+[imagen]="juego.background_image" [nombre]="juego.name" [idJuego]="juego.id"></app-tarjetas>
+</div>

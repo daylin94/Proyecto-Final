@@ -1,0 +1,14 @@
+.tar{
+    display: flex;
+    box-sizing:border-box;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.target{
+    margin-bottom: 1%;
+    width: 30%;
+    margin: 10px;
+}

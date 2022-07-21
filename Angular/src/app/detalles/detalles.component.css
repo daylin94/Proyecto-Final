@@ -1,0 +1,18 @@
+.div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.div h1{
+   text-align: center;
+}
+
+.div2{
+    display: flex;
+    justify-content: justify;
+    flex-direction: column;
+    margin-top: 10px;
+}
